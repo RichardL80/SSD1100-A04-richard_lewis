@@ -6,7 +6,7 @@
     <title>Richard Lewis - A04</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body class="container">
+  <body>
     <header class="container row">
       <div class="container row">
         <div class="logo"><img src="./images/iolare.svg" /></div>
@@ -15,7 +15,7 @@
           BC<br />A1A 1A1<br />owner@example.com
         </div>
       </div>
-      <div>Invoice 0001</div>
+      <div class="container end"><p>Invoice 0001</p></div>
     </header>
     <main>
       <section class="container row">
@@ -75,13 +75,15 @@
         <div>
           Please remit payment via Interac E-Transfer to<br />owner@examplecompany.com
         </div>
-        <div class="container column item">
-          <div class="label">Total Due</div>
-          <div>CAD 9100.00</div>
+        <div class="container end">
+          <div class="item">
+            <div class="label">Total Due</div>
+            <div>CAD 9100.00</div>
+          </div>
         </div>
       </section>
     </main>
-    <footer class="container">
+    <footer class="end">
       <p>@ 2023 Example</p>
     </footer>
   </body>
