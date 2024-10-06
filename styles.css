@@ -7,16 +7,15 @@ body {
   margin: 0;
 }
 body {
-  flex-direction: column;
-  gap: 20px;
-  justify-content: space-between;
+  display: grid;
+  grid-template-rows: auto 1fr 80px;
+  grid-gap: 20px;
   padding: 20px;
 }
 main {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: auto auto auto 1fr;
   gap: 10px;
-  flex-grow: 1;
 }
 p {
   margin: 0;
@@ -26,17 +25,19 @@ table {
 }
 footer {
   height: 80px;
-  align-self: self-end;
+  display: grid;
   align-items: center;
 }
 .container {
-  display: flex;
+  display: grid;
 }
 .row {
-  justify-content: space-between;
+  grid-template-columns: auto 1fr auto;
 }
 .summary {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  justify-content: end;
   gap: 10px;
   height: 100px;
 }
@@ -44,11 +45,13 @@ footer {
   border: 1px solid black;
 }
 .item {
+  display: grid;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+  align-content: center;
   width: 100px;
+}
+.end {
+  justify-content: end;
 }
 .logo {
   padding-right: 10px;
