@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Richard Lewis - A04</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body class="container">
+    <header class="container row">
+      <div class="container row">
+        <div class="logo"><img src="./images/iolare.svg" /></div>
+        <div>
+          Example Co.<br />123 Example Street<br />Suite 101<br />Exampleton
+          BC<br />A1A 1A1<br />owner@example.com
+        </div>
+      </div>
+      <div>Invoice 0001</div>
+    </header>
+    <main>
+      <section class="container row">
+        <div>
+          <div>
+            <span class="label">Bill To:</span><br />Client Name<br />Client
+            Company Name<br />123 Example Street<br />Suite 101<br />Demoville,
+            BC<br />A1A 1A1<br />owner@client-companyname.com
+          </div>
+        </div>
+        <div class="summary">
+          <div class="item">
+            <div class="label">Date</div>
+            <div>2023/11/11</div>
+          </div>
+          <div class="item">
+            <div class="label">Please Pay</div>
+            <div>CAD 9100.00</div>
+          </div>
+          <div class="item">
+            <div class="label">Due Date</div>
+            <div>2023/11/11</div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <table>
+          <colgroup>
+            <col span="1" style="width: 40%" />
+            <col span="1" style="width: 20%" />
+            <col span="1" style="width: 20%" />
+            <col span="1" style="width: 20%" />
+          </colgroup>
+          <thead class="label">
+            <th class="text">Item</th>
+            <th class="number">Quantity</th>
+            <th class="amount">Rate</th>
+            <th class="amount">Amount</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Cat 1 : Product1</td>
+              <td class="number">1</td>
+              <td class="amount">100.00</td>
+              <td class="amount">100.00</td>
+            </tr>
+            <tr>
+              <td>Cat 2 : Product1</td>
+              <td class="number">10</td>
+              <td class="amount">900.00</td>
+              <td class="amount">9000.00</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="container row">
+        <div>
+          Please remit payment via Interac E-Transfer to<br />owner@examplecompany.com
+        </div>
+        <div class="container column item">
+          <div class="label">Total Due</div>
+          <div>CAD 9100.00</div>
+        </div>
+      </section>
+    </main>
+    <footer class="container">
+      <p>@ 2023 Example</p>
+    </footer>
+  </body>
+</html>
