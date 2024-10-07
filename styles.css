@@ -14,7 +14,7 @@ body {
 main {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
   flex-grow: 1;
 }
 p {
@@ -22,6 +22,11 @@ p {
 }
 table {
   width: 100%;
+  border-collapse: collapse;
+}
+th,
+td {
+  border: 1px solid black;
 }
 footer {
   height: 80px;
